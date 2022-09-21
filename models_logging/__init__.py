@@ -1,7 +1,9 @@
 from threading import local
 
 
-default_app_config = 'models_logging.apps.LoggingConfig'
+# default_app_config = 'models_logging.apps.LoggingConfig'
+# Because: RemovedInDjango41Warning: 'models_logging' defines default_app_config = 'models_logging.apps.LoggingConfig'.
+# Django now detects this configuration automatically. You can remove default_app_config.
 
 
 class _Local(local):
